@@ -1,7 +1,130 @@
 body {
 	font-size: 16px;
-	color: #fff;
-	background-color: #61122f;
+	color: #222;
+	background-color: #222;
 	font-family: 'Oxygen', sans-serif;
-	margin: 0;
 }
+
+/* Header Start */
+
+
+
+.navbar-brand {
+	margin: 10px
+}
+
+.navbar-toggler {
+	margin: 10px;
+}
+
+div .navbar-nav {
+	color: #fff;
+
+}
+
+a {
+  text-align: center;	
+  color: inherit; /* blue colors for links too */
+  text-decoration: inherit; /* no underline */
+  }
+
+ hr {
+ 	margin: 0;
+ 	color: #222;
+ }
+
+ /* Header End */
+
+ /* Main Content Start*/
+
+h2 {
+	font-size: 1.5em;
+	margin-top: 10px;
+	color: #fff;
+}
+
+section {
+	position: relative;
+	margin: 0;
+	padding: 15px;
+	width: 100%;
+	
+}
+
+p {
+	position: relative;
+	clear: right;
+}
+
+div {
+	position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: auto;
+
+}
+
+#Chicken, #Beef, #Sushi{
+	color: #222;
+	font-size: 1.2em;
+	text-align: center;
+	background-color: #fff;
+	margin: 0;
+	padding: 10px;
+	font-weight: bold;
+}
+
+
+.Content {
+	font-size: 0.8em;
+	background-color: #fff;
+	margin: 0;
+	padding: 10px;
+}
+
+.Top {
+	color: #222;
+}
+
+ /* Main Content End */
+
+  /* Media Start */
+
+/********** super large devices only **********/
+@media (min-width: 1400px) {
+
+.col-lg-4 {
+	float: left;
+	width: 33.33%
+}
+
+
+} 
+/********** Medium devices only **********/
+@media (min-width: 767px) and (max-width: 1399px) {
+	
+.col-md-6 {
+	float: left;
+	width: 50%
+}
+
+.col-md-12 {
+	float: left;
+	width: 100%;
+}
+
+}
+  
+/********** Small devices only **********/
+@media (min-width: 576px) and (max-width: 766px) {
+
+
+}
+
+/********** Extra small devices only **********/
+@media (max-width: 575px) {
+
+
+}
+  
+
