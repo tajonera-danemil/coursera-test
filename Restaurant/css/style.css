@@ -70,7 +70,7 @@ body {
 
 
 #phone{
-	margin-top: 5px;
+	margin-top: 15px;
 }
 
 #phone a{ /* Phone number */
@@ -85,10 +85,12 @@ body {
 
 }
 
+/*
 .navbar-nav li .active{
 	color:#09f;
     border-top:3px solid #951C49;
 }
+*/
 
 .nav-item i{
   display: flex;
