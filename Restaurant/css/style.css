@@ -8,10 +8,11 @@ body {
 
 #header-nav {
 	background-color: #f6b319;
-	border-radius: 1;
-	border: 0;
+	border-radius: 0;
+	border: 5;
 
 }
+
 
 #logo-img {
 	background: url('../images/restaurant-logo_large.png') no-repeat;
@@ -21,10 +22,19 @@ body {
 }
 
 .navbar-brand {
-	padding-top: 50px;
+	padding-top: 10px;
 }
 
-.navbar-brand h1 {
+.nav-item{
+	color: #222;
+	font-size: 1em;
+	text-align: center;
+	margin: 0;
+	padding: 10px;
+}
+
+
+h1 {
 	font-family: 'Lora', serif;
 	color: #557c3e;
 	font-size: 1.5em;
@@ -34,9 +44,10 @@ body {
 	margin-top: 0;
 	margin-bottom: 0;
 	line-height: 0.75;
+	padding-top: 20px;
+
 	
 }
-
 
 .navbar-brand a:hover, a:focus, a:link, a:active {
 	text-decoration: none;
@@ -55,7 +66,7 @@ body {
 }
 
 #nav-list {
-  margin-top: 10px;
+  margin-top: 0px;
 }
 #nav-list a {
   color: #951C49;
@@ -71,6 +82,8 @@ body {
 
 #phone{
 	margin-top: 15px;
+	color: inherit; /* blue colors for links too */
+  text-decoration: inherit; /* no underline */
 }
 
 #phone a{ /* Phone number */
@@ -83,39 +96,26 @@ body {
 	color: #557c3e;
 	text-align: left;
 
+
 }
 
-/*
-.navbar-nav li .active{
-	color:#09f;
-    border-top:3px solid #951C49;
-}
-*/
 
 .nav-item i{
-  display: flex;
-  align-items: center;
   color: #951C49;
   margin-right: 10px;
-  margin-top: 10px;
   font-size: 1.8em;
-  padding-left: 7px;
 }
 
 .nav-item i:hover{
+text-align: center;	
 color: #61122f;
 font-size: 2em;
 }
 
-.navbar button.navbar-toggler, .navbar .icon-bar {
-	clear: both;
-	margin-top: -30px;
-}
-
-.navbar button.navbar-toggler {
-  clear: both;
-  margin-top: -10px;
-}
+ hr {
+ 	margin: 0;
+ 	color: #222;
+ }
 
 /*END HEADER */
 
@@ -243,6 +243,8 @@ box-shadow: 0 1px 5px 1px #cccccc;
 /********** super large devices only **********/
 @media (min-width: 1400px) {
 
+
+
 	.jumbotron {
 		background: url('../images/jumbotron_1200.jpg') no-repeat;
 		height: 675px;
@@ -269,13 +271,13 @@ box-shadow: 0 1px 5px 1px #cccccc;
 
 } 
 /********** Medium devices only **********/
-@media (min-width: 767px) and (max-width: 1199px) {
+@media (min-width: 767px) and (max-width: 1199.99px) {
   /* Header */
   #logo-img {
     background: url('../images/restaurant-logo_medium.png') no-repeat;
     width: 100px;
     height: 100px;
-    margin: 20px 5px 5px 0;
+   
   }
   /* End Header */
 
@@ -329,9 +331,10 @@ box-shadow: 0 1px 5px 1px #cccccc;
     margin-right: 5px;
   }
 
-  #call-btn > a {
-    font-size: 1.5em;
-    display: block;
+  .btn {
+  	color: inherit; /* blue colors for links too */
+  	text-decoration: inherit; /* no underline */
+    font-size: 2em;
     margin: 0 20px;
     padding: 10px;
     border: 2px solid #fff;
@@ -356,6 +359,16 @@ box-shadow: 0 1px 5px 1px #cccccc;
 
 /********** Extra small devices only **********/
 @media (max-width: 575px) {
+
+	h1 {
+		font-size: .9em;
+	}
+
+
+
+	#phone {
+
+	}
 
 
 	#menu-tile, #specials-tile {
@@ -389,6 +402,18 @@ box-shadow: 0 1px 5px 1px #cccccc;
 		width: 100%;
 	}
 
+	.btn {
+  	color: inherit; /* blue colors for links too */
+  	text-decoration: inherit; /* no underline */
+    font-size: 1em;
+    display: block;
+    margin: 10px;
+    padding: 10px;
+    border: 2px solid #fff;
+    background-color: #f6b319;
+    color: #951c49;
+    text-align: center;
+}
 
 }
   
